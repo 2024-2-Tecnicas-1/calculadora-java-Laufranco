@@ -18,17 +18,24 @@ public class Calculadora {
                 // Operación resta:
                 respuesta = numero1 - numero2;
                 break;
-            case '*' :
+            case '*':
                 // Operación multiplicación:
                 respuesta = numero1 * numero2;
                 break;
-            case '/' :
+            case '/':
                 // Operación división:
                 respuesta = (double) numero1 / numero2;
                 break;
+            case '%':
+             
+                respuesta = numero1 % numero2;
+                break;
+            case '^':
             
-            // TODO: DEBES CREAR AQUÍ LOS CASES PARA LA OPERACIÓN DE LA POTENCIA Y EL MÓDULO.
-                
+                respuesta = Math.pow (numero1,numero2);
+                break;
+
+            
             default:
                 throw new IllegalArgumentException("Operación inválida.");
         }
